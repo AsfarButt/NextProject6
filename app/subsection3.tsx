@@ -44,8 +44,8 @@ const Data: data[] = [
     return(<div className="smallshadowgiver relative m-4 p-4 px-6 w-auto max-w-240 h-auto rounded-2xl bg-white overflow-hidden">
         <h1 className="relative text-[12px] h-3 mb-1 leading-none font-bold text-purple-800/80 bg-white z-1">Your Progress</h1>
         <div className="relative w-full h-auto overflow-hidden" ref={container}>
-            <div className="relative w-fit h-auto flex flex-row justify-between items-center">
-                <span className="flex-none text-[20px] max-w-60 font-bold text-black/85">{Data[activeindex].description}</span>
+            <div className="relative w-auto h-auto flex flex-row gap-2 justify-between items-center">
+                <span className="flex-none text-[20px] max-w-60 w-[70%] sm:w-auto font-bold text-black/85">{Data[activeindex].description}</span>
                 <span className="flex-none text-[46px] font-extrabold font-sans pl-4" style={{color: Data[activeindex].color}}>{Data[activeindex].number}</span>
             </div>
             <div className={`relative w-full h-2 rounded-xl bg-gray-400/20`}>
