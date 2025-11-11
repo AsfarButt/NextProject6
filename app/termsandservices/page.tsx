@@ -9,7 +9,7 @@ export default function Page() {
   const year = currentTime.getFullYear();
 
   return (
-    <div className="relative w-full h-full flex flex-col justify-center items-center">
+    <div className="relative px-2 w-full h-full flex flex-col justify-center items-center">
       <div className="relative w-full py-8 border-b border-gray-400/40 flex justify-center items-center">
         <div className="relative w-full max-w-270">
           <button className="font-semibold text-[20px]" onClick={() => router.back()}>
@@ -21,12 +21,13 @@ export default function Page() {
       <div className="relative w-full max-w-280 h-auto flex flex-col px-2 sm:px-2 md:px-4 lg:px-8 justify-center items-center">
         <div className="relative w-full h-auto flex flex-col justify-start items-center">
           <div className="relative w-full py-8">
-            <h1 className="text-4xl pb-8 font-bold font-sans text-black/90">Terms and Conditions</h1>
+            <h1 className="text-3xl sm:text-4xl pb-8 font-bold font-sans text-black/90">Terms and Conditions</h1>
             <h2 className="text-gray-600/80 text-[19px] font-sans">
               Last updated {month} {date}, {year}
             </h2>
           </div>
 
+          <div className="relative w-full h-auto scale-90 origin-top sm:scale-100">
           {/* 1st Paragraph */}
           <div className="relative mb-4 w-full h-auto">
             <h1 className="text-[26px] text-black/80 font-bold font-sans">1. Acceptance of Terms</h1>
@@ -106,6 +107,8 @@ export default function Page() {
               For questions regarding these Terms and Conditions, please contact us at <span className="font-bold font-sans">contact@gradewise.ai</span>.
             </h2>
           </div>
+          </div>
+
         </div>
       </div>
     </div>
